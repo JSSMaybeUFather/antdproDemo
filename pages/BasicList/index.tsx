@@ -15,6 +15,7 @@ function BasicList() {
 	const [sortQuery, setSortQuery] = useState("");
 	const [modalVisible, setModalVisible] = useState(false);
 	const [modalUri, setModalUri] = useState("");
+	//测试一下git
 	//发送网络请求，获取数据内容
 	const init = useRequest<{ data: BasicListApi.ListData }>(
 		`${GetListUrl}&page=${page}&per_page=${per_page}${sortQuery}`,
